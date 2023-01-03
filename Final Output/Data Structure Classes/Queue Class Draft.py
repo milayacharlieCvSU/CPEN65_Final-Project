@@ -7,7 +7,7 @@ class Queue:
     def enqueue(self, item):
         if item in self.items:
             return False
-        return self.items.insert(0, item)
+        self.items.insert(0, item)
     
     # Removes the first item in the queue. Returns the item if the queue is not empty and a string otherwise.
     def dequeue(self):
